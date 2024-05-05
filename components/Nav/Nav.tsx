@@ -3,8 +3,10 @@ import Link from 'next/link'
 import React from 'react'
 import { NavLink } from './NavLink'
 import { CreonButton } from '../ui/Button/Button'
+import { Menu } from '@headlessui/react'
+import { NavMobile } from './NavMobile'
 
-const NAV_LINKS = [
+export const NAV_LINKS = [
     {
         id: 1,
         title: 'Creon Pass',
@@ -42,7 +44,7 @@ export const Nav = () => {
                     height={40}
                 />
             </div>
-            <ul className="flex gap-5 h-full items-center">
+            <ul className="flex gap-5 h-full items-center md:hidden sm:hidden lg:flex xl:flex 2xl:flex">
                 {NAV_LINKS.map((nav_link) => (
                     <NavLink {...nav_link} key={nav_link.id} />
                 ))}
@@ -52,6 +54,10 @@ export const Nav = () => {
                     </CreonButton>
                 </li>
             </ul>
+
+            <div className="relative md:inline sm:inline lg:hidden xl:hidden 2xl:hidden">
+                <NavMobile />
+            </div>
         </nav>
     )
 }

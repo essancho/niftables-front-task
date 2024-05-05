@@ -5,8 +5,8 @@ import { CreonHighlightText } from '@creon/components/ui/HighlightText/CreonHigh
 
 export const CreonPass = () => {
     return (
-        <section className="2xl:max-w-[1440px] xl:max-w-[1140px] lg:max-w-[970px] mx-auto flex justify-between mt-10 py-10">
-            <div className="w-2/4">
+        <section className="2xl:max-w-[1440px] xl:max-w-[1140px] lg:max-w-[970px] mx-auto flex lg:justify-between xl:justify-between 2xl:justify-between md:flex-col sm:flex-col 2xl:flex-row xl:flex-row lg:flex-row md:items-center sm:items-center mt-10 py-10">
+            <div className="2xl:w-2/4 xl:w-2/4 lg:w-2/4 md:w-full sm:w-full">
                 <h2 className="2xl:text-7xl xl:text-4xl lg:text-2xl font-monument uppercase leading-tight">
                     Creon Pass NFT
                 </h2>

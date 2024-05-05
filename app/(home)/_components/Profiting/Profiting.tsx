@@ -4,7 +4,7 @@ import React from 'react'
 export const Profiting = () => {
     return (
         <section className="2xl:max-w-[1440px] xl:max-w-[1140px] lg:max-w-[970px] mx-auto flex flex-col mt-10">
-            <div className="flex flex-col pb-20">
+            <div className="flex flex-col pb-20 ">
                 <h2 className="2xl:text-7xl xl:text-4xl lg:text-2xl font-monument uppercase leading-tight">
                     Profiting Through
                 </h2>
